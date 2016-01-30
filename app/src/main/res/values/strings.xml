@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Spell Bee</string>
+
+    <string name="correctToast">Good Job!</string>
+    <string name="incorrectToast">Awwwh !</string>
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:weightSum="1">
+
+    <TextView android:id="@+id/scoreCard"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Score: 0/0"
+        android:padding="15dip"
+        android:textColor="#0587d9"
+        android:textSize="26dip"
+        android:gravity="center"
+        android:textStyle="bold"/>
+
+    <EditText android:id="@+id/txtText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:hint="spell the word you hear"
+        android:layout_above="@+id/btnSpeak"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button android:id="@+id/btnCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check Spelling"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/txtText"
+        android:layout_alignStart="@+id/txtText"
+        android:layout_alignRight="@+id/btnNext"
+        android:layout_alignEnd="@+id/btnNext" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout">
+
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" New Word" />
+
+    <Button
+        android:id="@+id/btnSpeak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pronounce" />
+        </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.71">
+
+        <Button android:id="@+id/btnReset"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+    </FrameLayout>
+</LinearLayout>
